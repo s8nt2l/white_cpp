@@ -1,0 +1,5 @@
+void printVector(const vector<int>& vect){//u can also use every type such like int,char...ect
+    for (auto s : v){
+        cout << s << endl;
+    }
+}

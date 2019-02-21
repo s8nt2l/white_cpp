@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void Reverse(vector <int>& vecn){
+    int name;
+    for(int i = 0; i < vecn.size() / 2; i++){
+        name = vecn[i];
+        vecn[i] = vecn[vecn.size() - 1 - i];
+        vecn[vecn.size() - 1 - i] = name;
+    }
+    
+}
+
+int main(){
+    vector <int> numbers = {11,5,3,6};
+    if(numbers.empty()){
+        return 0;
+    }
+    Reverse(numbers);
+    for(int i = 0; i < numbers.size(); i++){
+        cout << numbers[i] << endl;
+    }
+    system("pause");
+        
+    return 0;
+}
